@@ -31,7 +31,8 @@
             color: var(--text);
             min-height: 100vh;
             padding: 16px;
-            font-size: 13px; /* Taille réduite */
+            font-size: 14px;
+            direction: rtl;
         }
 
         .container {
@@ -87,13 +88,13 @@
         }
 
         h1 {
-            font-size: 1.3rem; /* Taille réduite */
+            font-size: 1.35rem;
             font-weight: 650;
             letter-spacing: 0.01em;
         }
 
         .subtitle {
-            font-size: 0.9rem; /* Taille réduite */
+            font-size: 0.95rem;
             opacity: 0.9;
             display: flex;
             align-items: center;
@@ -102,7 +103,7 @@
         }
 
         .tag {
-            font-size: 0.7rem; /* Taille réduite */
+            font-size: 0.75rem;
             background: rgba(15, 23, 42, 0.5);
             padding: 3px 9px;
             border-radius: 999px;
@@ -125,7 +126,7 @@
         h2 {
             color: #0f172a;
             margin-bottom: 10px;
-            font-size: 1rem; /* Taille réduite */
+            font-size: 1.05rem;
             font-weight: 650;
             display: inline-flex;
             align-items: center;
@@ -141,7 +142,7 @@
         h3 {
             color: var(--primary-dark);
             margin: 8px 0 6px;
-            font-size: 0.93rem; /* Taille réduite */
+            font-size: 0.98rem;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -154,7 +155,7 @@
             border-radius: 10px;
             margin: 10px 0;
             border: 1px solid rgba(22, 163, 74, 0.3);
-            font-size: 0.85rem; /* Taille réduite */
+            font-size: 0.9rem;
         }
 
         .example-box {
@@ -171,7 +172,7 @@
         }
 
         .data-label {
-            font-size: 0.81rem; /* Taille réduite */
+            font-size: 0.86rem;
             color: var(--muted);
             margin-bottom: 4px;
         }
@@ -187,7 +188,7 @@
             border: 1px dashed rgba(234, 179, 8, 0.7);
             font-weight: 600;
             color: #92400e;
-            font-size: 0.8rem; /* Taille réduite */
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -233,7 +234,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.75rem; /* Taille réduite */
+            font-size: 0.8rem;
             margin-top: 2px;
         }
 
@@ -241,7 +242,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.85rem; /* Taille réduite */
+            font-size: 0.9rem;
         }
 
         .question .answer-btn {
@@ -255,7 +256,7 @@
             padding: 4px 10px;
             border-radius: 999px;
             cursor: pointer;
-            font-size: 0.75rem; /* Taille réduite */
+            font-size: 0.8rem;
             transition: all 0.18s ease;
             display: inline-flex;
             align-items: center;
@@ -264,7 +265,7 @@
         }
 
         .answer-btn i {
-            font-size: 0.75rem; /* Taille réduite */
+            font-size: 0.8rem;
         }
 
         .answer-btn:hover {
@@ -279,10 +280,10 @@
             padding: 8px 9px;
             border-radius: 9px;
             margin-top: 6px;
-            margin-right: 30px;
+            margin-right: 30px; /* pour rester aligné avec le texte de la question */
             border-right: 3px solid var(--secondary);
             display: none;
-            font-size: 0.83rem; /* Taille réduite */
+            font-size: 0.88rem;
         }
 
         .answer.show {
@@ -304,22 +305,22 @@
             display: flex;
             align-items: flex-start;
             gap: 7px;
-            font-size: 0.81rem; /* Taille réduite */
+            font-size: 0.86rem;
             color: #78350f;
         }
 
         .note i {
-            font-size: 0.95rem; /* Taille réduite */
+            font-size: 1rem;
             margin-top: 1px;
         }
 
         p {
             margin-bottom: 6px;
-            font-size: 0.85rem; /* Taille réduite */
+            font-size: 0.9rem;
         }
 
         .emoji {
-            font-size: 0.95rem; /* Taille réduite */
+            font-size: 1rem;
         }
 
         /* TABLEAU SOLUTION */
@@ -327,7 +328,7 @@
             width: 100%;
             border-collapse: collapse;
             margin: 6px 0;
-            font-size: 0.81rem; /* Taille réduite */
+            font-size: 0.86rem;
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 9px rgba(148, 163, 184, 0.2);
@@ -368,7 +369,7 @@
             border: none;
             padding: 7px 14px;
             border-radius: 999px;
-            font-size: 0.8rem; /* Taille réduite */
+            font-size: 0.85rem;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
@@ -378,7 +379,7 @@
         }
 
         .open-link-btn i {
-            font-size: 0.85rem; /* Taille réduite */
+            font-size: 0.9rem;
         }
 
         .open-link-btn:hover {
@@ -391,7 +392,7 @@
             padding: 10px 10px 12px;
             background: #0f172a;
             color: #e5e7eb;
-            font-size: 0.75rem; /* Taille réduite */
+            font-size: 0.8rem;
         }
 
         footer span {
@@ -402,7 +403,7 @@
         @media (max-width: 640px) {
             body {
                 padding: 10px;
-                font-size: 12px; /* Taille réduite */
+                font-size: 13px;
             }
 
             header {
@@ -418,7 +419,7 @@
             }
 
             h1 {
-                font-size: 1.05rem; /* Taille réduite */
+                font-size: 1.1rem;
             }
 
             .header-icon {
@@ -433,7 +434,7 @@
         }
         
         .arabic-text {
-            font-size: 1.05rem; /* Taille réduite */
+            font-size: 1.1rem;
             line-height: 1.8;
             margin: 10px 0;
             padding: 10px;
@@ -444,22 +445,13 @@
         
         .math-example {
             font-family: 'Courier New', monospace;
-            font-size: 1.25rem; /* Taille réduite */
+            font-size: 1.3rem;
             text-align: center;
             margin: 15px 0;
             padding: 12px;
             background-color: #f5f5f5;
             border-radius: 8px;
             direction: ltr;
-        }
-        
-        .decimal-rule {
-            background: linear-gradient(to right, #fef3c7, #fffbeb);
-            padding: 12px 14px;
-            border-radius: 10px;
-            margin: 12px 0;
-            border: 1px solid rgba(245, 158, 11, 0.4);
-            font-size: 0.85rem; /* Taille réduite */
         }
     </style>
 </head>
@@ -489,7 +481,7 @@
                 
                 <div class="example-box">
                     <h3><i class="fas fa-lightbulb"></i> مثال:</h3>
-                    <p class="arabic-text">أجري القسمة التالية: 116 ÷ 3</p>
+                    <p class="arabic-text">ضع وأجري القسمة التالية:</p>
                     
                     <div class="questions">
                         <!-- Q1 -->
@@ -509,31 +501,13 @@
                                 <p>التحقق: 38 × 3 = 114، 114 + 2 = 116</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="section">
-                <h2><i class="fas fa-calculator"></i> القسمة العشرية: الخارج المضبوط</h2>
-                
-                <div class="decimal-rule">
-                    <h3><i class="fas fa-ruler-combined"></i> قاعدة:</h3>
-                    <p class="arabic-text">لقسمة عدد عشري على عدد عشري آخر تقوم بها بلي:<br>
-                    - تتخلص أولاً من الفاصلة فيهما معاً أو من المقسوم عليه فقط وذلك بضربهما في 10 أو 100 أو 1000.<br>
-                    - وبعدها أقوم بالقسمة المعتادة مع العلم أن الباقي يساوي 0.</p>
-                </div>
-                
-                <div class="example-box">
-                    <h3><i class="fas fa-lightbulb"></i> مثال:</h3>
-                    <p class="arabic-text">أوجد الخارج المضبوط للقسمة التالية:</p>
-                    
-                    <div class="questions">
+                        
                         <!-- Q2 -->
                         <div class="question-wrapper">
                             <div class="question">
                                 <div class="question-content">
                                     <div class="data-sample">
-                                        21.6 ÷ 5 = ؟
+                                        114 ÷ 3 = ؟
                                     </div>
                                 </div>
                                 <button class="answer-btn" onclick="toggleAnswer(2, event)">
@@ -541,44 +515,8 @@
                                 </button>
                             </div>
                             <div class="answer" id="answer2">
-                                <p>21.6 ÷ 5 = 4.32</p>
-                                <p>الشرح: 21.6 × 10 = 216، 5 × 10 = 50، 216 ÷ 50 = 4.32</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Q3 -->
-                        <div class="question-wrapper">
-                            <div class="question">
-                                <div class="question-content">
-                                    <div class="data-sample">
-                                        4.41 ÷ 3.5 = ؟
-                                    </div>
-                                </div>
-                                <button class="answer-btn" onclick="toggleAnswer(3, event)">
-                                    <i class="fas fa-eye"></i> عرض الإجابة
-                                </button>
-                            </div>
-                            <div class="answer" id="answer3">
-                                <p>4.41 ÷ 3.5 = 1.26</p>
-                                <p>الشرح: 4.41 × 100 = 441، 3.5 × 100 = 350، 441 ÷ 350 = 1.26</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Q4 -->
-                        <div class="question-wrapper">
-                            <div class="question">
-                                <div class="question-content">
-                                    <div class="data-sample">
-                                        215 ÷ 2.5 = ؟
-                                    </div>
-                                </div>
-                                <button class="answer-btn" onclick="toggleAnswer(4, event)">
-                                    <i class="fas fa-eye"></i> عرض الإجابة
-                                </button>
-                            </div>
-                            <div class="answer" id="answer4">
-                                <p>215 ÷ 2.5 = 86</p>
-                                <p>الشرح: 215 × 10 = 2150، 2.5 × 10 = 25، 2150 ÷ 25 = 86</p>
+                                <p>114 ÷ 3 = 38</p>
+                                <p>التحقق: 38 × 3 = 114</p>
                             </div>
                         </div>
                     </div>
@@ -587,9 +525,10 @@
                 <div class="note">
                     <i class="fas fa-lightbulb"></i>
                     <div>
-                        <strong>ملاحظة:</strong> في القسمة العشرية، نضرب كلا العددين في 10، 100، أو 1000 للتخلص من الفاصلة العشرية ثم نجري القسمة العادية.
+                        <strong>تلميح:</strong> يمكنك التحقق من صحة الحل بضرب الخارج في المقسوم عليه ثم إضافة الباقي.
                     </div>
-                </div>
+                </div>         
+            
 
                 <!-- BOUTON POUR OUVRIR LE FICHIER HTML DANS UNE NOUVELLE FENÊTRE -->
                 <div class="open-link-container">
